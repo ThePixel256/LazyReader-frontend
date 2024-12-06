@@ -24,7 +24,7 @@ const BookComparisonChart = () => {
     useEffect(() => {
         const fetchBooksData = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/api/books/books");
+                const response = await axios.get("https://lazyreader-backend-production.up.railway.app/api/books/books");
                 setData(response.data);
                 setLoading(false);
             } catch (error) {

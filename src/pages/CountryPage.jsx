@@ -9,7 +9,7 @@ function CountryPage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("http://localhost:3000/api/clients/clients", {
+                const res = await axios.get("https://lazyreader-backend-production.up.railway.app/api/clients/clients", {
                     params: {
                         pais: [
                             "Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "Guatemala", "Honduras", 

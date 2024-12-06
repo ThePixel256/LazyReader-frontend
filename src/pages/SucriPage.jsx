@@ -9,7 +9,7 @@ function SucriPage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("http://localhost:3000/api/clients/clients", {
+                const res = await axios.get("https://lazyreader-backend-production.up.railway.app/api/clients/clients", {
                     params: {
                         servicio: ["Economico", "Basico", "Premium"],  // Filtro por servicio
                     },
