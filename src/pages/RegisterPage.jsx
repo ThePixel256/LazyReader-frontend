@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { registerApi } from '../api/AuthRequest.js';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function RegisterPage() {
 
@@ -55,9 +55,9 @@ function RegisterPage() {
 
         <p className='text-center text-sm text-gray-600'>
           ¿Ya tienes una cuenta?{' '}
-          <a href='/login' className='text-indigo-600 hover:text-indigo-700'>
+          <Link to="/login" className='text-indigo-600 hover:text-indigo-700'>
             Inicia sesión aquí
-          </a>
+          </Link>
         </p>
       </div>
     </div>
