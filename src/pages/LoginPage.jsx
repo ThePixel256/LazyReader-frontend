@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { loginApi } from '../api/AuthRequest.js';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , Link } from 'react-router-dom';
 
 function LoginPage() {
 
@@ -62,9 +62,9 @@ function LoginPage() {
 
         <p className='text-center text-sm text-gray-600'>
           ¿No tienes cuenta?{' '}
-          <a href='/register' className='text-blue-600 hover:text-blue-700'>
+          <Link to="/register" className='text-blue-600 hover:text-blue-700'>
             Regístrate aquí
-          </a>
+          </Link>
         </p>
       </div>
     </div>
